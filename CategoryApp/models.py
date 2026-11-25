@@ -12,6 +12,8 @@ class CategoryModel(models.Model):
         verbose_name = "Category"
         verbose_name_plural = "Categories"
 
+    def __str__(self):
+        return self.name
     def save(self, *args, **kwargs):
         value = self.name
         self.slug = slugify(value)
