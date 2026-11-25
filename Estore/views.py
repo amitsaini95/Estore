@@ -6,4 +6,6 @@ def ProductListView(request):
     context={'products':products}
     return render(request,"product/productlist.html",context)
 def ProductDetailView(request,slug):
-    pass
+    productslug=ProductModel.objects.get(slug=slug)
+    print(productslug)
+    return render(request,'product/productdetails.html',context={'productslug':productslug})

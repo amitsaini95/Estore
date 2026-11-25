@@ -1,4 +1,6 @@
 from django.db import models
+from django.utils.text import slugify
+from django.urls import reverse
 
 # Create your models here.
 class ProductModel(models.Model):
@@ -18,4 +20,12 @@ class ProductModel(models.Model):
         verbose_name = "product"
         verbose_name_plural = "Products"
 
+    def save(self, *args, **kwargs):
+        value = self.title
+        self.slug = slugify(value)
+        super().save(*args, **kwargs)
+        
 
+    def get_absolute_url(self):
+        return reverse("productDetails", kwargs={"slug": self.slug})
+    
