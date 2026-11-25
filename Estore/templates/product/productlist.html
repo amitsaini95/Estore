@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block EstoreContainer %}
 <h3>Products</h3>
+{% for product in  products %}
+<div class="card" style="width: 18rem;">
+  <img src="{{product.productImage.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{product.title}}</h5>
+    <p class="card-text">{{product.content}}.</p>
+    <a href="#" class="btn btn-primary">add to Cart</a>
+  </div>
+</div>
+{% endfor %}
 
 
 {% endblock EstoreContainer %}
