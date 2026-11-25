@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class ProductModel(models.Model):
     title=models.CharField(max_length=200,unique=True)
+    slug=models.SlugField(max_length=200,blank=True)
     content=models.TextField()
     productImage=models.ImageField(upload_to="productImage",null=True,blank=True)
     price = models.DecimalField(

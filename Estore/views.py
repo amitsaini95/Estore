@@ -5,3 +5,5 @@ def ProductListView(request):
     products=ProductModel.objects.all()
     context={'products':products}
     return render(request,"product/productlist.html",context)
+def ProductDetailView(request,slug):
+    pass
