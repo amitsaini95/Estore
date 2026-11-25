@@ -1,0 +1,18 @@
+.TopMenu nav ul li a{
+    color:rgba(19, 17, 23, 0.7);;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-left: 25px;
+      font-family: "IBM Plex Mono", sans-serif;
+    text-transform: uppercase;
+}
+.TopMenu{
+    width: 100%;
+    background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 5px 0px;
+}
+.TopMenu .logo img{
+    margin-bottom: 13px;
+}
