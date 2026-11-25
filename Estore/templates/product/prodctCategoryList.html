@@ -1,7 +1,18 @@
 {% extends "base.html" %}
 {% block EstoreContainer %}
+{% for productcat in  productcatgorieslist %}
 
-{{productcatgorieslist}}
+<div class="card" style="width: 18rem;">
+  <a href="{{productcat.get_absolute_url}}"><img src="{{productcat.productImage.url}}" class="card-img-top" alt="..."></a>
+  <div class="card-body">
+    <h5 class="card-title">{{productcat.title}}</h5>
+    <p class="card-text">{{productcat.content}}.</p>
+  
+    <a href="#" class="btn btn-primary">add to Cart</a>
+  </div>
+</div>
+{% endfor %}
+
 
 {% endblock EstoreContainer %}
 
