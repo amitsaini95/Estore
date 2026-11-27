@@ -5,7 +5,7 @@ from CategoryApp.models import CategoryModel
 def ProductListView(request):
     products=ProductModel.objects.all()
     context={'products':products}
-    return render(request,"product/productlist.html",context)
+    return render(request,"product/home.html",context)
 def ProductDetailView(request,slug):
     productslug=ProductModel.objects.get(slug=slug)
     print(productslug)

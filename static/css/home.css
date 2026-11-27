@@ -1,0 +1,59 @@
+.banner{
+    background-color:#d9dadc;
+    height: 900px;
+    
+}
+
+.banner  .bannerContent h1{
+    font-size: 70px !important;
+    line-height: 1.3em !important;
+    font-weight: 700;
+ font-family: "IBM Plex Mono", sans-serif;
+}
+.bannerContent{
+    width: 46% !important;
+  
+
+}
+.banner  .bannerContent p{
+   
+    color: #403f43 !important;
+    font-weight: 500 !important;
+   
+    text-align: justify;
+    
+}
+.banner .bannerContent{
+    padding-top: 250px;
+ 
+}
+
+.bannerImage img{
+     height:897px;
+    width:790px;  
+ }
+ .bannerservices{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .bannerservices .icons{
+   display: flex;
+    gap: 20px;
+    align-items: center;
+
+ }
+ .check-icons{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #403f43;
+    padding: 3px;
+ }
+ .explore_btn button{
+    padding:15px 30px;
+    border:none;
+    text-transform: uppercase;
+    font-weight: 700;
+ }
