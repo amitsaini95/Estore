@@ -9,6 +9,7 @@
     line-height: 1.3em !important;
     font-weight: 700;
  font-family: "IBM Plex Mono", sans-serif;
+ margin-bottom: 20px;
 }
 .bannerContent{
     width: 46% !important;
@@ -19,8 +20,9 @@
    
     color: #403f43 !important;
     font-weight: 500 !important;
-   
+    font-size: 16px;
     text-align: justify;
+    padding: 4px;
     
 }
 .banner .bannerContent{
@@ -42,6 +44,7 @@
    display: flex;
     gap: 20px;
     align-items: center;
+    margin:10px 0px;
 
  }
  .check-icons{
@@ -51,9 +54,41 @@
     background: #403f43;
     padding: 3px;
  }
- .explore_btn button{
+ .explore_btn{
+    padding: 15px 0px;
+ }
+ .explore_btn a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 15px;
+ }
+ .explore_btn a button{
     padding:15px 30px;
     border:none;
     text-transform: uppercase;
     font-weight: 700;
+    background: #e8363c;
+ }
+ .ClientProvide{
+    background: #131117;
+ }
+ .CompanyTerm{
+    padding:75px 0px;
+    text-align: center;
+ }
+ .CompanyTerm svg{
+    height: 50px !important;
+    width: 50px !important;
+    fill: #fff;
+    margin-bottom: 20px;
+
+ }
+ .CompanyTerm h5{
+    color:#fff;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", sans-serif;
+ }
+ .CompanyTerm p{
+    font-size: 16px;
+    color: #ccc;
  }
