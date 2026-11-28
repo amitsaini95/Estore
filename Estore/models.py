@@ -29,4 +29,16 @@ class ProductModel(models.Model):
 
     def get_absolute_url(self):
         return reverse("productDetails", kwargs={"slug": self.slug})
+
+
+class ArticleModel(models.Model):
+    name=models.CharField(max_length=100)
+    articleCode=models.IntegerField()
+    articleImage=models.ImageField(upload_to="ArticleImg")
+    created=models.DateTimeField(auto_now_add=True)
+    updated=models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+
     

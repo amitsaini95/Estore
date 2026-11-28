@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from .models import ProductModel
+from .models import *
 from CategoryApp.models import CategoryModel
 # Create your views here.
 def ProductListView(request):
     products=ProductModel.objects.all()
-    context={'products':products}
+    articles=ArticleModel.objects.all()
+    context={'products':products,'articles':articles}
     return render(request,"product/home.html",context)
 def ProductDetailView(request,slug):
     productslug=ProductModel.objects.get(slug=slug)

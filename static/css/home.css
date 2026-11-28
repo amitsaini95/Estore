@@ -1,3 +1,6 @@
+:root p{
+    font-size: 16px !important;
+}
 .banner{
     background-color:#d9dadc;
     height: 900px;
@@ -92,3 +95,91 @@
     font-size: 16px;
     color: #ccc;
  }
+
+  .Arrivals p{
+    color:#687279;
+    font-size: 18px;
+    font-weight: 700;
+
+ }
+ .Arrivals h2{
+    font-size: 40px;
+    color: #131117;
+     font-family: "IBM Plex Mono", sans-serif;
+     font-weight: 700;
+ }
+ .SaleProducts{
+    position: relative;
+ }
+ .SaleProducts .saleHeading{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #e8363c;
+   padding: 5px;
+   color: #fff;
+   border-radius: 3px;
+   font-size: 12px;
+   font-weight: 700;
+ }
+ .SaleProducts .productTitle{
+    font-size: 17px; 
+    color: #131117;
+     font-family: "IBM Plex Mono", sans-serif;
+     font-weight: 700;
+     margin-top:25px;
+
+}
+.SaleProducts .productPrice{
+    color:#687279;
+    font-size: 15px;
+    font-weight: 500;
+}
+.SaleProducts .ProductCat h6{
+   color:#687279;
+   font-weight: 500;
+   font-size: 12px;
+   text-transform: uppercase;
+}
+.SaleProducts .productAddCartBtn{
+   margin:15px 0px;
+
+}
+.SaleProducts .productAddCartBtn a button{
+   color:#fff;
+   background: #e8363c;
+   padding:10px 20px;
+   font-size: 15px;
+   border: none;
+   font-weight: 500;
+
+}
+.Articles{
+   padding: 120px 0px;
+   background-color: #131117 !important;
+    background-image: url(https://startersites.io/blocksy/garderobe/wp-content/uploads/2021/12/shop-sale-cta-background.svg) !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+}
+.articleInfo{
+   position: relative;
+  
+
+}
+.articleContent{
+   width:65%;
+   height: 180px;
+   padding:50px;
+   background: #131117;
+   color:#fff;
+   left: 0px;
+   bottom:0px;
+   position: absolute;
+   
+}
+.articleContent:hover{
+   width: 75%;
+   background: #e8363c;
+   left: -30px;
+   transition:.5s all;
+}
