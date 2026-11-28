@@ -83,14 +83,15 @@
     </div>
     <div class="container ProductSpaing">
         <div class="row  ">
-            <div class="col-12 Arrivals">
+            <div class="col-12 Arrivals ">
                 <p>
                     Check out latest products</p>
                     <h2>New Arrivals</h2>
             </div>
-            <div class="row">
+        </div>
+            <div class="row ">
                 {% for product in  products %}
-                <div class="col-3">
+                <div class="col-3 ">
                     <div class="SaleProducts">
                         <div class="saleHeading">SALE</div>
                         <img src="{{product.productImage.url}}" width="100%" height="348px">
@@ -109,11 +110,11 @@
                 </div>
                 {% endfor %}
             </div>
-        </div>
+       
     </div>
     <div class="Articles">
         <div class="container">
-            <div class="row p-0 ">
+            <div class="row  ">
                 {% for article in articles  %}
                 <div class="col-4  articleInfo">
                     <img src="{{article.articleImage.url}}" width="360" height="500">
@@ -127,5 +128,29 @@
             </div>
         </div>
     </div>
-
+    <div class="container newTechnoLogy">
+        <div class="row ">
+            <div class="col-12  text-center">
+               
+            
+            <div class="clothImg">
+                <img src="/static/ClothTech.webp" width="100%">
+                 <div class="newClothContent">
+                    <div class="newClotherContainer">
+                    <h2>New Cloth Technologies</h2>
+                    <p>Mauris vitae ultricies leo integer malesuada.</p>
+                        
+                    
+                    <p>Odio tempor orci dapibus ultrices in. Egestas diam in arcu cursus euismod. Dictum purus viverra accumsan in nisl. Tempor id eu</p>
+                    
+                    <div class="signature pt-3"><img src="static/Alice-W-signature.svg" >
+                    <h6>Alice Autumn, CEO</h6>
+                    </div>
+                    
+                </div>                
+</div>
+            </div>
+        </div>
+        </div>
+    </div>
 {% endblock EstoreContainer %}
